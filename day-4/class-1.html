@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- block - tag the whole width -->
+    <!-- inline - take space that is give to them -->
+    <form action="">
+      <div>
+        <label for="namefield"> Name: </label>
+        <input type="text" id="namefield" pattern="[A-Za-z._&%]{3,3}+[]" placeholder="Enter your Name" />
+      </div>
+      <div>
+        <input type="checkbox" id="Frontend" />
+        <label for="Frontend"> Frontend Development </label>
+        <input type="checkbox" id="Backend" />
+        <label for="Backend"> Backend Development </label>
+        <input type="checkbox" id="Fullstack" />
+        <label for="Fullstack"> Fullstack Development </label>
+      </div>
+      <div>
+        <input type="radio" name="course" id="Frontendcourse">
+        <label for="Frontendcourse">Frontend Development</label>
+        <input type="radio" name="course" id="backendcourse">
+        <label for="backendcourse"> Backend Development </label>
+        <input type="radio" name="course" id="fullstackcourse">
+        <label for="fullstackcourse"> Fullstack Development </label>
+      </div>
+      <div>
+        <input type="email" name="" id="" placeholder="Enter your Email">
+      </div>
+      <div>
+        <input type="color" name="" id="">
+      </div>
+      <div>
+        <input type="date" name="" id="">
+      </div>
+      <div>
+        <input type="datetime" name="" id="">
+      </div>
+      <div>
+        <input type="datetime-local" name="" id="">
+      </div>
+      <div>
+        <input type="file" name="" id="">
+      </div>
+      <div>
+        <label for="">Age:</label>
+        <input type="number" max="70" min="0" name="" placeholder="enter your number" id="">
+      </div>
+      <div>
+        <input type="password" minlength="8" maxlength="16" placeholder="enter the password" required name="" id="">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="" placeholder="Enter your message" id="message"></textarea>
+      </div>
+      <div>
+        <input type="range" name="" id="">
+      </div>
+      <div>
+        <input type="search" name="" id="">
+      </div>
+      <div>
+        <input type="text" name="" value="Email is Mandatory" id="" disabled>
+      </div>
+      <div>
+        <label for="tech">Choose a Skill:</label>
+        <select name="tech" id="tech">
+            <option value="Select">Select</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" name="" value="Reset" id="">
+      </div>
+      <button>A Normal Button</button>
+      <button disabled="disabled">Disabled Button</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
