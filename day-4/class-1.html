@@ -8,10 +8,11 @@
   <body>
     <!-- block - tag the whole width -->
     <!-- inline - take space that is give to them -->
-    <form action="">
+    <form action="url" method="post">
       <div>
-        <label for="namefield"> Name: </label>
-        <input type="text" id="namefield" pattern="[A-Za-z._&%]{3,3}+[]" placeholder="Enter your Name" />
+        <label for="namefield">Name: </label>
+        <input type="text" id="namefield" maxlength="10" placeholder="Enter your Name" />
+        <input type="number" placeholder="Enter your Phone number">
       </div>
       <div>
         <input type="checkbox" id="Frontend" />
@@ -49,7 +50,7 @@
       </div>
       <div>
         <label for="">Age:</label>
-        <input type="number" max="70" min="0" name="" placeholder="enter your number" id="">
+        <input type="number" value="12" max="70" min="0" name="" placeholder="enter your number" id="">
       </div>
       <div>
         <input type="password" minlength="8" maxlength="16" placeholder="enter the password" required name="" id="">
