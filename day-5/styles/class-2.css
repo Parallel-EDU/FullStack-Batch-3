@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 100px;
+  color: red;
+}
+.heading {
+  font-size: 18px;
+  color: blueviolet;
+}
+#text {
+  font-size: 200px;
+  color: aqua;
+}
+.logo {
+  color: chartreuse;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.header {
+  position: fixed;
+  /* top: 0px; */
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: rgb(236, 133, 133);
+}
+#hero {
+  padding-left: 80px;
+}
+.navigation-bar {
+  position: absolute;
+  top: 30px;
+  left: 80%;
+}
