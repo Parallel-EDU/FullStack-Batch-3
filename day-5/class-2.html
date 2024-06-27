@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning CSS</title>
-    <link rel="stylesheet" href="./styles/class-2.css" />
+    <link rel="stylesheet" href="./styles/class-2.css">
     <style>
-      h1 {
-        color: blue;
-      }
+        h1{
+            color: blue;
+        }
     </style>
   </head>
   <body>
@@ -23,22 +23,25 @@
       </nav>
     </header>
     <main id="hero">
-      <a href="#text-2">Text-2</a>
-      <p>CSS -Cascading Style Sheet (style website)</p>
+      <a href="#text2">Text-2</a>
+      <p class="para heading" id="paragraph">CSS -Cascading Style Sheet (style website)</p>
       <p style="font-size: 20px">Inline CSS</p>
-      <h1>Internal CSS</h1>
+      <h1 class="Internal-css">Internal CSS</h1>
       <h2>External CSS</h2>
-      <p></p>
+      <p class="para"></p>
       <h2 class="heading">This is a CSS class</h2>
       <h2 class="heading">This is a CSS class</h2>
-      <p>tag along with content and attributes is known as element</p>
+      <p class="para">tag along with content and attributes is known as element</p>
       <h2 id="text">We are targeting this element using an ID</h2>
       <h2 id="text2">We are targeting this element using an ID</h2>
       <p>
         Inline CSS and Internal CSS, targetting element by tag name, giving same
         ID value to different elements (Bad paractice)
       </p>
-      <span s>Font-size</span>
+      <span style="font-size: 80px">Font-size</span>
     </main>
+    <div class="box-model">
+        Box-model
+    </div>
   </body>
 </html>

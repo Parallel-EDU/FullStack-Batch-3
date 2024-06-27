@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace;
+}
+.header {
+  position: fixed;
+  background: black;
+  padding: 40px 80px;
+  width: 100%;
+}
+.logo {
+  color: white;
+}
+.navigation-bar {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  /* position: relative;
+  top: 0px;
+  left: 300px; */
+  color: aqua;
+  width: 80px;
+}
+.section {
+  width: 100%;
+  height: 1000px;
+  background: orange;
+  /* position: absolute; */
+  top: 100px;
+}
+.text{
+    margin-top: 600px;
+}

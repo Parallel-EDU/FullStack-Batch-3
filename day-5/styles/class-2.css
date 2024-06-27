@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: cursive;
+}
 h1 {
   font-size: 100px;
-  color: red;
+  color: rgb(255, 0, 0);
 }
 .heading {
   font-size: 18px;
@@ -13,6 +16,10 @@ h1 {
 #text {
   font-size: 200px;
   color: aqua;
+  text-align: right;
+}
+.para {
+  font-size: 16px;
 }
 .logo {
   color: chartreuse;
@@ -24,7 +31,7 @@ h1 {
   padding: 20px;
 }
 .header {
-  position: fixed;
+  /* position: fixed; */
   /* top: 0px; */
   border-bottom: 1px solid black;
   margin-bottom: 50px;
@@ -38,4 +45,33 @@ h1 {
   position: absolute;
   top: 30px;
   left: 80%;
+}
+.box-model {
+  /* border: 5px solid black; */
+  border: 5px solid black;
+  /* border-style:solid;
+    border-color: black; */
+  background-color: yellow;
+  margin: 50px;
+  margin-top: 30px;
+  margin-right: 100px;
+  padding: 50px;
+  text-align: center;
+  width: 500px;
+  height: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Internal-css{
+  width: 600px;
+  height: 500px;
+  background-color:black;
+  padding: 50px 30px 100px 10px;
+  border-width: 40px;
+  border-style:solid;
+  border-color: blue;
+  /* border: 40px solid blue; */
+  /* margin-top: 100px;
+  margin-bottom: 50px; */
+  margin: 100px 30px 200px 0px;
 }
