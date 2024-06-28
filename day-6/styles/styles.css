@@ -28,6 +28,7 @@ body {
 .section {
   width: 100%;
   background: orange;
+  height: 1200px;
   /* position: absolute; */
   top: 110px;
   padding-top: 110px;
