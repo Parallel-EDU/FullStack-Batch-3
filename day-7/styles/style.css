@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+}
+.header {
+  position: fixed;
+  background: black;
+  padding: 40px 80px;
+  width: 100%;
+}
+.logo {
+  color: white;
+}
+.navigation-bar {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  /* position: relative;
+    top: 0px;
+    left: 300px; */
+  color: aqua;
+  display: inline;
+}
+.hero-section {
+  padding-top: 300px;
+  color: black;
+  height: 700px;
+}
+.div {
+  display: inline;
+}
+.span {
+  display: block;
+}
+.navigation-bar-items {
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+.about-section {
+  background: #ababab;
+  padding: 0px;
+}
+.container {
+  display: flex;
+  gap: 70px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content:center;
+  /* justify-content: space-between; */
+  align-items:center;
+  height: 100vh;
+}
+.sub-container-1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 13px;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  /* order: 3; */
+}
+.sub-container-2 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 13px;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  /* order: 2; */
+  /* flex-grow: 1; */
+}
+.sub-container-3 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 13px;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  /* order: 1;
+  flex-shrink: 1; */
+}
