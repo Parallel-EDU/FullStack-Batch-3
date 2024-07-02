@@ -49,6 +49,7 @@ body {
     'footer footer footer';
     /* height: 2000px; */
     column-gap: 20px;
+    /* gap: ; */
 }
 .container-header{
     grid-area: header;
@@ -105,4 +106,27 @@ body {
     height: 300px;
     border-radius: 13px;
     box-shadow: 2px 2px 10px black;
+}
+@media (max-width:500px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 800px 200px auto 100px 100px;
+    grid-template-areas: 
+    'header'
+    'sidebar'
+    'content'
+    'article'
+    'footer';
+  }
+  .container-heading{
+    width: 90%;
+    font-size: 50px;
+    left: 20px;
+  }
+  .content{
+    padding: 80px 20px;
+  }
+  .header{
+    padding: 40px 20px;
+  }
 }
