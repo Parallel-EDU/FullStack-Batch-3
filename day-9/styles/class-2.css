@@ -1,4 +1,3 @@
-/* Learn about float and clear */
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +49,7 @@
   /* ease-out : slow at end and fast in the beginning
   ease-in : fast at end and slow in the beginning
   ease-in-out : slow at end and slow in the beginning and fast in the middle phase */
-  animation-direction: alternate-reverse;
+  animation-direction:alternate-reverse;
   /* animation-fill-mode: forwards;
   animation-delay: 5s; */
   /* animation-play-state: paused; */

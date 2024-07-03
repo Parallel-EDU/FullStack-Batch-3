@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.paragraph {
+  width: 800px;
+  margin-top: 300px;
+  margin-left: 80px;
+  opacity: 0.7;
+}
+.paragraph:hover {
+  opacity: 1;
+}
+.paragraph::before {
+  content: "Note :";
+  color: blue;
+}
+.paragraph::after {
+  content: " -END";
+  color: violet;
+}
+.transform {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  margin-left: 300px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 9;
+  transition: transform 2s, background 0.3s;
+}
+.transform:hover {
+  transform: scale(2);
+  background: red;
+}
+img {
+  /* float: right; */
+  position: relative;
+  z-index: -1;
+}
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.section-para {
+  width: 700px;
+  /* float: left; */
+}
+.cat-info {
+  font-size: 50px;
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Z-index will get applied to the elements with the following properties
+position: relative/absolute/sticky/fixed;
+display: flex/grid; */
