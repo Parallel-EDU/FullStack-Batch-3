@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Website</title>
+  </head>
+  <body>
+    <!-- breakpoints:
+    2xl - 1536px
+    xl - 1280px
+    lg - 1024px
+    md - 768px
+    sm - 640px -->
+
+    <!-- 2xl - min-width
+    max-2xl : max-width -->
+    <header
+      class="flex backdrop-blur z-50 justify-between fixed w-full items-center shadow-lg px-[80px] max-lg:px-[40px] max-md:px-[20px] py-[21px]"
+    >
+      <a href="#hero">
+        <img src="./assets/logo.svg" width="40px" height="40px" alt="" />
+      </a>
+      <nav>
+        <ul class="flex gap-[20px] max-[426px]:gap-[10px]">
+          <li>
+            <a href="#about" class="max-[370px]:text-sm">About</a>
+          </li>
+          <li><a href="#services" class="max-[370px]:text-sm">Service</a></li>
+          <li><a href="#portfolio" class="max-[370px]:text-sm">Portfolio</a></li>
+          <li><a href="#contact" class="max-[370px]:text-sm">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="sticky top-[90vh] ml-[95%]">
+      <a href="#hero">
+        <img class="w-[50px]" src="./assets/uparrow.svg" alt="" />
+      </a>
+    </div> -->
+    <main id="hero" class="h-[100vh] pl-[80px] max-lg:px-[40px] max-md:px-[20px] pt-[300px] max-sm:pt-[150px]">
+      <h1 class="w-[700px] max-md:w-full text-[78px] max-md:text-[56px] max-sm:text-[44px] leading-[100%]">
+        Welcome to my Website
+      </h1>
+      <a href="#about">
+        <button
+          class="px-[36px] max-sm:w-[90%] max-sm:absolute max-sm:bottom-[40px] py-[8px] mt-[24px] border-[1px] border-black rounded-[35px] hover:bg-black hover:text-white max-sm:text-white max-sm:bg-black duration-500 transition-all"
+        >
+          About
+        </button></a
+      >
+    </main>
+    <section
+      id="about"
+      class="py-[121px] flex gap-[65px] max-[1370px]:gap-[32px] max-[885px]:flex-col items-center px-[80px] max-lg:px-[40px] max-md:px-[20px]"
+    >
+      <img src="../day-3/images/cat.jpeg" class="rounded-[50%] max-[1130px]:w-[300px]" alt="" />
+      <div>
+        <h1 class="text-[34px] mb-[24px] max-[885px]:text-center">About Us</h1>
+        <p class="w-[700px] max-[1370px]:w-[500px] max-[885px]:text-center max-[885px]:w-full">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro
+          vitae, corrupti, aperiam dolorum dolores eaque repellat beatae
+          assumenda, sapiente voluptas libero. Commodi, cumque quia, amet
+          possimus voluptates totam doloribus aspernatur a saepe, alias natus
+          accusantium dolor? Eos voluptatibus nostrum vel explicabo nulla earum
+          fugit in voluptas nihil non ad porro dignissimos, eius totam facilis
+          dicta animi temporibus minima, quidem doloribus quod fuga enim.
+          Facilis, accusantium distinctio id adipisci magnam blanditiis est
+          consectetur inventore deserunt quasi eveniet natus animi repellendus
+          mollitia tempora, amet debitis. Perspiciatis laudantium quae possimus,
+          dolorum recusandae numquam velit? Modi doloribus alias dolorem
+          architecto nobis quidem iste doloremque veniam molestiae dolore fugiat
+          ipsum sunt, ab, enim consequatur vero repudiandae eum, delectus
+          corrupti nihil ad repellendus non iusto.
+        </p>
+      </div>
+    </section>
+    <section id="services" class="py-[121px] px-[80px] max-lg:px-[40px] max-md:px-[20px]">
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">Our Services</h1>
+      <div class="flex gap-[20px] max-md:gap-[30px] max-xl:flex-wrap">
+        <div
+          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet
+            ipsam deserunt ex? Quos minima dolore mollitia repellendus
+            molestiae! Iste ratione delectus itaque, magni officia, rem sint
+            eligendi vero sapiente repudiandae placeat, beatae dolore sit.
+          </p>
+        </div>
+        <div
+          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet
+            ipsam deserunt ex? Quos minima dolore mollitia repellendus
+            molestiae! Iste ratione delectus itaque, magni officia, rem sint
+            eligendi vero sapiente repudiandae placeat, beatae dolore sit.
+          </p>
+        </div>
+        <div
+          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet
+            ipsam deserunt ex? Quos minima dolore mollitia repellendus
+            molestiae! Iste ratione delectus itaque, magni officia, rem sint
+            eligendi vero sapiente repudiandae placeat, beatae dolore sit.
+          </p>
+        </div>
+        <div
+          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet
+            ipsam deserunt ex? Quos minima dolore mollitia repellendus
+            molestiae! Iste ratione delectus itaque, magni officia, rem sint
+            eligendi vero sapiente repudiandae placeat, beatae dolore sit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="py-[121px] px-[80px] max-lg:px-[40px] max-md:px-[20px]">
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">Portfolio</h1>
+      <div class="flex gap-[20px] max-md:gap-[30px] max-xl:flex-wrap">
+        <div
+        class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px]">Full Stack Development</h1>
+        </div>
+        <div
+        class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px]">Full Stack Development</h1>
+        </div>
+        <div
+        class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px]">Full Stack Development</h1>
+        </div>
+        <div
+        class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px]">Full Stack Development</h1>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="py-[121px] flex flex-col items-center px-[80px] max-lg:px-[40px] max-md:px-[20px]"
+    >
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">Contact Us</h1>
+
+      <form
+        class="flex flex-col gap-[20px] w-[500px] max-sm:w-full px-[20px] py-[30px] shadow-2xl rounded-[13px]"
+        action=""
+      >
+        <input
+          type="text"
+          class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
+          name="Name"
+          placeholder="Enter Your Name"
+          id=""
+        />
+        <input
+          type="text"
+          class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
+          name="Name"
+          placeholder="Enter Your Email"
+          id=""
+        />
+        <!-- placeholder:text-[red] -->
+        <textarea
+          name=""
+          class="resize-none border-[1px] border-black pl-[12px] py-[7px] rounded-[7px] h-[200px]"
+          placeholder="Enter your message"
+          id=""
+        ></textarea>
+        <button
+          class="border-black border-[1px] py-[12px] rounded-[35px] hover:bg-black hover:text-white max-md:text-white max-md:bg-black duration-500 transition-all"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer class="py-[52px] flex bg-gray-500  max-[550px]:justify-start max-[330px]:gap-[50px] max-[550px]:gap-[80px] justify-between px-[80px] max-lg:px-[40px] max-md:px-[20px]">
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <p class="w-[100px] text-white">xyz, District, State, country</p>
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">Instagram</li>
+            <li class="text-white hover:underline cursor-pointer">Github</li>
+            <li class="text-white hover:underline cursor-pointer">Linkedin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">Phonenumber</li>
+            <li class="text-white hover:underline cursor-pointer">Email</li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a href="#about" class="text-white hover:underline cursor-pointer">About</a>
+          </li>
+          <li><a href="#services" class="text-white hover:underline cursor-pointer">Service</a></li>
+          <li><a href="#portfolio" class="text-white hover:underline cursor-pointer">Portfolio</a></li>
+          <li><a href="#contact" class="text-white hover:underline cursor-pointer">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
