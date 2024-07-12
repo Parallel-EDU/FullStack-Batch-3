@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +34,27 @@
           </li>
           <li><a href="#contact" class="max-md:text-[20px]">Contact</a></li>
         </ul>
+        <div
+          id="dropdown"
+          class="absolute hidden top-[70px] right-[20px] flex flex-col w-[200px] bg-white border-[1px] border-black rounded-[13px]"
+        >
+          <a
+            href="#blog-section"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog Section</a
+          >
+          <a
+            href="./blog-1.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-1</a
+          >
+          <a
+            href="./blog-1.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-2</a
+          >
+          <a href="./blog-1.html" class="px-[10px] py-[12px]">Blog-3</a>
+        </div>
       </nav>
       <img
         src="../day-16/assets/hamburger.svg"
@@ -151,33 +172,34 @@
       </div>
     </section>
     <section
-      id="portfolio"
+      id="blog-section"
       class="py-[121px] px-[80px] max-lg:px-[40px] max-md:px-[20px]"
     >
       <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">
-        Portfolio
+        Blogs
       </h1>
       <div class="flex gap-[20px] max-md:gap-[30px] max-xl:flex-wrap">
-        <div
-          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
-        >
-          <h1 class="text-[24px]">Full Stack Development</h1>
-        </div>
-        <div
-          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
-        >
-          <h1 class="text-[24px]">Full Stack Development</h1>
-        </div>
-        <div
-          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
-        >
-          <h1 class="text-[24px]">Full Stack Development</h1>
-        </div>
-        <div
-          class="w-[25%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
-        >
-          <h1 class="text-[24px]">Full Stack Development</h1>
-        </div>
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-1</h1>
+          </div>
+        </a>
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-2</h1>
+          </div>
+        </a>
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-3</h1>
+          </div>
+        </a>
       </div>
     </section>
     <section
