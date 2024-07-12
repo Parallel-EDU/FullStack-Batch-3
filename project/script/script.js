@@ -4,8 +4,6 @@ const toggle = document.getElementById("close");
 const blog = document.getElementById("blog");
 const arrowdown = document.getElementById("arrowdown");
 const dropdown = document.getElementById("dropdown");
-const cat = document.getElementById("cat-image");
-const orangecat = document.getElementById("cat2-image");
 const section = document.getElementById("content");
 const blogHeader = document.getElementById("blog-header");
 const blogPara = document.getElementById("para");
@@ -14,6 +12,47 @@ const mediumText = document.getElementById("text-medium");
 const largeText = document.getElementById("text-large");
 const increaseWidth = document.getElementById("increase-width");
 const decreaseWidth = document.getElementById("decrease-width");
+const submitbutton = document.getElementById("submitbutton");
+const background = document.getElementById("background");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("close-popup");
+const nameField = document.getElementById("nameField");
+const emailField = document.getElementById("emailField");
+const messageField = document.getElementById("messageField");
+const tabone = document.getElementById("tabone");
+const tabtwo = document.getElementById("tabtwo");
+
+const showTabOne = () => {
+  tabone.style.display = 'block'
+  tabtwo.style.display = 'none'
+};
+
+const showTabTwo = () => {
+  tabone.style.display = 'none'
+  tabtwo.style.display = 'block'
+};
+
+submitbutton.addEventListener("click", function (e) {
+  e.preventDefault();
+  background.style.display = "block";
+  popup.style.display = "flex";
+});
+
+closePopup.addEventListener("click", function (e) {
+  e.preventDefault();
+  background.style.display = "none";
+  popup.style.display = "none";
+});
+
+nameField.addEventListener("change", (e) => {
+  console.log(e.target.value);
+});
+emailField.addEventListener("change", (e) => {
+  console.log(e.target.value);
+});
+messageField.addEventListener("change", (e) => {
+  console.log(e.target.value);
+});
 
 hamburger.addEventListener("click", function () {
   nav.style.right = "0px";
@@ -45,14 +84,12 @@ blog.addEventListener("click", () => {
 //   cat.setAttribute("src", "../assets/cat2.jpg");
 // }, 1000);
 
-
-
-setTimeout(() => {
-  cat.style.display = "none";
-}, 5000);
-setTimeout(() => {
-  orangecat.style.display = "block";
-}, 5000);
+// setTimeout(() => {
+//   cat.style.display = "none";
+// }, 5000);
+// setTimeout(() => {
+//   orangecat.style.display = "block";
+// }, 5000);
 
 smallText.addEventListener("click", function () {
   blogHeader.style.fontSize = "20px";
@@ -76,3 +113,24 @@ increaseWidth.addEventListener("click", function () {
 decreaseWidth.addEventListener("click", function () {
   section.style.padding = "100px 400px";
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const cat = document.getElementById("cat-image");
+//   const orangecat = document.getElementById("cat2-image");
+
+//   let currentImage = true;
+
+//   function changeImage() {
+//     if (currentImage === true) {
+//       cat.classList.add("opacity-0");
+//       orangecat.classList.remove("opacity-0");
+//     } else {
+//       cat.classList.remove("opacity-0");
+//       orangecat.classList.add("opacity-0");
+//     }
+
+//     currentImage = !currentImage;
+//     setTimeout(changeImage, 3000);
+//   }
+//   setTimeout(changeImage, 3000);
+// });

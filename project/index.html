@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Project</title>
+    <!-- <style>
+      .hi
+    </style> -->
   </head>
   <body>
     <header
@@ -179,27 +182,74 @@
         Blogs
       </h1>
       <div class="flex gap-[20px] max-md:gap-[30px] max-xl:flex-wrap">
-        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-1.html">
           <div
             class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
           >
             <h1 class="text-[24px]">Blog-1</h1>
           </div>
         </a>
-        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-1.html">
           <div
             class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
           >
             <h1 class="text-[24px]">Blog-2</h1>
           </div>
         </a>
-        <a class="w-[33%] max-xl:w-[45%] max-md:w-full " href="./blog-1.html">
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-1.html">
           <div
             class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
           >
             <h1 class="text-[24px]">Blog-3</h1>
           </div>
         </a>
+      </div>
+    </section>
+    <section class="py-[121px] px-[80px] max-lg:px-[40px] max-md:px-[20px]">
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">
+        Tabs
+      </h1>
+      <div class="flex gap-[20px] max-md:gap-[30px] max-xl:flex-wrap">
+        <div
+          onclick="showTabOne()"
+          class="px-[80px] py-[20px] border-black border-[1px] rounded-[13px] transition-all"
+        >
+          <h1 class="text-base">Tab-1</h1>
+        </div>
+        <div
+          onclick="showTabTwo()"
+          class="px-[80px] py-[20px] border-black border-[1px] rounded-[13px] transition-all"
+        >
+          <h1 class="text-base">Tab-2</h1>
+        </div>
+      </div>
+      <div id="tabone" class="hidden">
+        <h1 class="mt-[30px]">Tab-1</h1>
+        <p class="w-[500px] mt-[12px]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+          quae amet ipsum dolores, repellat aut sunt aperiam cupiditate, porro
+          quam at, architecto ullam velit voluptas nisi eius sint incidunt dicta
+          explicabo facilis dolorum! Quibusdam doloremque magnam similique saepe
+          ut sint odit modi optio ea, voluptatem, tenetur mollitia quo quaerat
+          veniam sunt ipsum a beatae perspiciatis fuga totam error nobis. Non ab
+          tempora quos aliquid deleniti odio sit provident possimus consequatur
+          suscipit veniam optio officiis, dolorum quo corporis fuga expedita
+          nesciunt, molestiae quas ipsa dignissimos fugit quae qui. Aut.
+        </p>
+      </div>
+      <div id="tabtwo" class="hidden">
+        <h1 class="mt-[30px]">Tab-2</h1>
+        <p class="w-[500px] mt-[12px]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+          quae amet ipsum dolores, repellat aut sunt aperiam cupiditate, porro
+          quam at, architecto ullam velit voluptas nisi eius sint incidunt dicta
+          explicabo facilis dolorum! Quibusdam doloremque magnam similique saepe
+          ut sint odit modi optio ea, voluptatem, tenetur mollitia quo quaerat
+          veniam sunt ipsum a beatae perspiciatis fuga totam error nobis. Non ab
+          tempora quos aliquid deleniti odio sit provident possimus consequatur
+          suscipit veniam optio officiis, dolorum quo corporis fuga expedita
+          nesciunt, molestiae quas ipsa dignissimos fugit quae qui. Aut.
+        </p>
       </div>
     </section>
     <section
@@ -211,11 +261,13 @@
       </h1>
 
       <form
+        id="form"
         class="flex flex-col gap-[20px] w-[500px] max-sm:w-full px-[20px] py-[30px] shadow-2xl rounded-[13px]"
         action=""
       >
         <input
           type="text"
+          id="nameField"
           class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
           name="Name"
           placeholder="Enter Your Name"
@@ -223,24 +275,43 @@
         />
         <input
           type="text"
+          id="emailField"
           class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
-          name="Name"
+          name="email"
           placeholder="Enter Your Email"
           id=""
         />
         <!-- placeholder:text-[red] -->
         <textarea
           name=""
+          id="messageField"
           class="resize-none border-[1px] border-black pl-[12px] py-[7px] rounded-[7px] h-[200px]"
           placeholder="Enter your message"
           id=""
         ></textarea>
         <button
+          id="submitbutton"
           class="border-black border-[1px] py-[12px] rounded-[35px] hover:bg-black hover:text-white max-md:text-white max-md:bg-black duration-500 transition-all"
         >
           Submit
         </button>
       </form>
+      <div
+        id="background"
+        class="w-full hidden h-full fixed opacity-50 top-0 left-0 bg-black"
+      ></div>
+      <div
+        id="popup"
+        class="w-[500px] hidden h-[300px] fixed top-[33%] bg-white rounded-[13px] flex flex-col justify-center items-center"
+      >
+        <h1 class="text-[40px] text-center">Your Form Have been Submitted</h1>
+        <img
+          src="../day-16/assets/close.svg"
+          id="close-popup"
+          class="absolute top-[40px] cursor-pointer right-[40px] z-[999]"
+          alt=""
+        />
+      </div>
     </section>
     <footer
       class="py-[52px] flex bg-gray-500 max-[550px]:justify-start max-[330px]:gap-[50px] max-[550px]:gap-[80px] justify-between px-[80px] max-lg:px-[40px] max-md:px-[20px]"
