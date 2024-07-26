@@ -8,10 +8,10 @@
 // if-else - syntax
 // if(condition){
 //     code that runs when condition is true
-// }else{
+// } else{
 //     code that runs when condition is false
 // }
-// if-elseif-else - syntax
+// if-elseif - syntax
 // if(condition1){
 //     code that runs when condition1 is true
 // } else if(condition2){
@@ -20,7 +20,7 @@
 // .
 // .
 // else if(conditionN){
-//     code that runs when conditionN is true and all the conditions before are folse
+//     code that runs when conditionN is true and all the conditions before are false
 // } else{
 //     code that runs when all the condition are false
 // }
@@ -62,12 +62,12 @@ if (a < 10 && a > 5) {
 
 let firstnumber = 5;
 let secondnumber = 8;
-let operation = 1;
+let operation = 'not';
 switch (operation) {
-  case 1:
+  case 'add':
     console.log(firstnumber + secondnumber);
     break;
-  case 2:
+  case 'sub':
     console.log(firstnumber - secondnumber);
     break;
   default:
@@ -88,7 +88,7 @@ switch (operation) {
 //      //increment/decrement
 // }
 
-//do-while
+//do-while loop
 
 // initialization
 // do{
