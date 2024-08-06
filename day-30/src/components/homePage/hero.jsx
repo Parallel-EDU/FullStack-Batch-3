@@ -1,34 +1,32 @@
-import React from "react";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import ThemeContext from "../../contexts/ThemeContext";
 
-function Hero(props) {
-  const [count, setCount] = useState(0);
-  const [input, setInput] = useState("");
+function Hero() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <>
-      <h1>{props.value}</h1>
-      <div className="flex items-center mt-[52px] gap-[24px] pl-[80px]">
+    <main
+      id="hero"
+      style={{
+        background: theme === "light" ? "white" : "#333",
+        color: theme === "light" ? "black" : "white",
+      }}
+      className="h-[100vh] pl-[80px] max-lg:px-[40px] max-md:px-[20px] pt-[250px] max-sm:pt-[150px]"
+    >
+      <h1 className="w-[700px] max-md:w-full text-[78px] max-md:text-[56px] max-sm:text-[44px] leading-[100%]">
+        Welcome to my Website
+      </h1>
+      <Link to={"/about"}>
         <button
-          onClick={() => setCount(count - 1)}
-          className="border-[1px] w-[30px] h-[30px] border-black rounded-[4px] flex items-center justify-center"
+          style={{
+            border: theme === "light" ? "1px solid black" : "1px solid white",
+          }}
+          className="px-[36px] max-sm:w-[90%] max-sm:absolute max-sm:bottom-[40px] py-[8px] mt-[24px] border-[1px] border-black rounded-[35px] hover:bg-black hover:text-white max-sm:text-white max-sm:bg-black duration-500 transition-all"
         >
-          -
+          About
         </button>
-        <p>{count}</p>
-        <button
-          onClick={() => setCount(count + 1)}
-          className="border-[1px] w-[30px] h-[30px] border-black rounded-[4px] flex items-center justify-center"
-        >
-          +
-        </button>
-        <input
-          onChange={(e) => setInput(e.target.value)}
-          className="border-[1px] border-black rounded-[4px]"
-          type="text"
-        />
-      </div>
-        <p className="block">{input}</p>
-    </>
+      </Link>
+    </main>
   );
 }
 

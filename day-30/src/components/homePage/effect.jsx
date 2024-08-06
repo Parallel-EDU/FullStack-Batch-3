@@ -5,7 +5,6 @@ function Effect() {
   const [display, setDisplay] = useState(true);
   useEffect(() => {
     document.title = `you clicked ${count} times`;
-
     // return () => {
     //   console.log("clean up");
     // };
