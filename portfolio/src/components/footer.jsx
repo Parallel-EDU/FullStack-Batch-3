@@ -27,7 +27,7 @@ function Footer() {
             </div>
           </li>
         </ul>
-        <ul  className="flex flex-col gap-[4px]">
+        <ul className="flex flex-col gap-[4px]">
           <li>
             <a href="mailto:hello@paralleledu.com">Mail</a>
           </li>
@@ -37,27 +37,19 @@ function Footer() {
         </ul>
       </div>
 
-      <ul  className="flex flex-col gap-[4px]">
+      <ul className="flex flex-col gap-[4px]">
+        <li>
+          <Link to={"/about"}>About</Link>
+        </li>
         <li>
           <Link
-          to={"/about"}
+          to={"/projects"}
           >
-            About
+            Projects
           </Link>
         </li>
         <li>
-          <div
-          // to={"/projects"}
-          >
-            Projects
-          </div>
-        </li>
-        <li>
-          <div
-          // to={"/contact"}
-          >
-            Contact
-          </div>
+          <Link to={"/contact"}>Contact</Link>
         </li>
       </ul>
     </footer>

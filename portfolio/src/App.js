@@ -4,6 +4,8 @@ import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
 import HomePage from './pages/homepage';
 import AboutPage from "./pages/aboutpage";
+import ContactPage from "./pages/contactpage";
+import ProjectPage from "./pages/projectpage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -26,6 +28,24 @@ function App() {
           element={
             <>
               <AboutPage />
+            </>
+          }
+        />
+        <Route
+          exact
+          path={"/contact"}
+          element={
+            <>
+              <ContactPage />
+            </>
+          }
+        />
+        <Route
+          exact
+          path={"/projects"}
+          element={
+            <>
+              <ProjectPage />
             </>
           }
         />
