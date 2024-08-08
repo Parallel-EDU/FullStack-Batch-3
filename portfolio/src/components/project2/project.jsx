@@ -37,33 +37,6 @@ function Project() {
           </Link>
         </div>
         <div className="w-[400px] hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
-          <img src={Project2} className="border-[1px]" alt="" />
-          <h1 className="text-[20px] font-semibold mt-[12px]">
-            Knest Aluminium FormWork
-          </h1>
-          <p className="text-base mt-[12px] mb-[8px]">Skills Used:</p>
-          <div className="flex gap-[12px]">
-            <p className="px-[8px] py-[4] text-[14px] bg-[black] rounded-[35px] text-white">
-              HTML
-            </p>
-            <p className="px-[8px] py-[4] text-[14px] bg-[black] rounded-[35px] text-white">
-              TailwindCSS
-            </p>
-            <p className="px-[8px] py-[4] text-[14px] bg-[black] rounded-[35px] text-white">
-              JavaScript
-            </p>
-          </div>
-          <Link
-            to={"/projects/knest-project"}
-            className="absolute flex cursor-pointer left-[72%] bottom-[5px]"
-          >
-            <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
-              Read More
-            </p>
-            <img src={Arrow} className="w-[24px]" alt="" />
-          </Link>
-        </div>
-        <div className="w-[400px] hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
           <img src={Project3} className="border-[1px]" alt="" />
           <h1 className="text-[20px] font-semibold mt-[12px]">
             Portfolio Website

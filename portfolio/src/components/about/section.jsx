@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../../context/themeContext";
 
 function About() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <section className="px-[80px] pt-[51px] pb-[121px]">
+    <section
+      className={`${
+        theme === "light" ? "text-black bg-white" : "text-white bg-black"
+      } px-[80px] pt-[51px] pb-[121px]`}
+    >
       <div className="flex gap-[52px] justify- items-center">
         <img
           src="https://as1.ftcdn.net/v2/jpg/06/32/91/32/1000_F_632913287_pyej35IPG2tnAcqVxlD5QGlsJKUAYMhP.jpg"
@@ -59,9 +66,9 @@ function About() {
           repellendus aut at odit. Quia, rem, nobis cupiditate nulla officiis
           ipsam accusamus molestias magnam eligendi reiciendis autem. Officia
           accusamus rerum, asperiores distinctio, vitae ut laborum ipsam dolore
-          corporis <i>a possimus neque harum ass</i>umenda eos at maxime. Adipisci
-          praesentium maxime suscipit distinctio voluptas in odit dolorem earum
-          dolore reiciendis.
+          corporis <i>a possimus neque harum ass</i>umenda eos at maxime.
+          Adipisci praesentium maxime suscipit distinctio voluptas in odit
+          dolorem earum dolore reiciendis.
         </p>
       </div>
 

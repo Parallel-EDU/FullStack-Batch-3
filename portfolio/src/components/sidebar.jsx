@@ -3,37 +3,35 @@ import Github from "../assets/github-portfolio.png";
 import Linkedin from "../assets/linkedin-icon.webp";
 import Resume from "../assets/resume-icon.jpg";
 import Arrow from "../assets/arrow.svg";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+
 function Sidebar() {
   const [visibility, setVisibility] = useState(false);
-  const div = useRef(null);
   const view = () => {
     setVisibility(!visibility);
   };
 
-  useEffect(() => {
-    if (visibility === true) {
-      // for (let i = 0; i <= 100; i++) {
-      //   setTimeout((div.current.style.left = `${i}px`), 1000);
-      // }
-      div.current.style.left = `0px`
-    } else {
-      div.current.style.left = "-100px";
-    }
-  }, [visibility]);
   return (
-    <aside className="fixed bottom-[200px]">
+    <aside className="fixed bottom-[150px]">
       <ul className="flex flex-col items-center gap-[12px]">
         <li
           onClick={view}
           className="w-[50px] h-[50px] bg-[#f0f0f0] flex items-center justify-center rounded-[7px]"
         >
-          <img src={Arrow} width={30} height={30} alt="" />
+          <img src={Arrow} className={`${visibility ? 'rotate-[180deg]' : 'rotate-[0deg]'}`} width={30} height={30} alt="" />
         </li>
-        <div ref={div} className="flex-col relative flex bg-white p-[8px] rounded-[13px] gap-[14px]">
+        <div className=
+        {`flex-col relative ${visibility ? 'translate-0' : '-translate-x-[50px]'} transition-transform duration-300 ease-in-out  flex bg-white p-[8px] rounded-[13px] gap-[14px]`}
+        >
           <li>
             <a href="">
-              <img src={Github} className="bg-white rounded-[50%]" width={30} height={30} alt="" />
+              <img
+                src={Github}
+                className="bg-white rounded-[50%]"
+                width={30}
+                height={30}
+                alt=""
+              />
             </a>
           </li>
           <li>
