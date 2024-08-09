@@ -8,9 +8,9 @@ function About() {
     <section
       className={`${
         theme === "light" ? "text-black bg-white" : "text-white bg-black"
-      } px-[80px] pt-[51px] pb-[121px]`}
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[51px] pb-[121px] max-md:pb-[51px]`}
     >
-      <div className="flex gap-[52px] justify- items-center">
+      <div className="flex gap-[52px] max-lg:flex-col max-lg:items-start justify- items-center">
         <img
           src="https://as1.ftcdn.net/v2/jpg/06/32/91/32/1000_F_632913287_pyej35IPG2tnAcqVxlD5QGlsJKUAYMhP.jpg"
           alt=""
@@ -19,33 +19,33 @@ function About() {
         />
         <div className="flex flex-col gap-[12px]">
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">Name:</h1>
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">Name:</h1>
             <p className="text-[24px] leading-[120%] italic">Ahmed</p>
           </div>
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">DOB:</h1>
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">DOB:</h1>
             <p className="text-[24px] leading-[120%] italic">DD/MM/YYYY</p>
           </div>
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Highest Qualification:
             </h1>
             <p className="text-[24px] leading-[120%] italic">B.E(CSE)</p>
           </div>
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Passed out Year:
             </h1>
             <p className="text-[24px] leading-[120%] italic">YYYY</p>
           </div>
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Experience:
             </h1>
             <p className="text-[24px] leading-[120%] italic">8+ Years</p>
           </div>
           <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] leading-[120%] font-bold">
+            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Tech Stack:
             </h1>
             <p className="text-[24px] leading-[120%] italic">MERN Stack</p>

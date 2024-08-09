@@ -6,13 +6,16 @@ import Arrow from "../../assets/arrow-1.svg";
 import { Link } from "react-router-dom";
 
 function Project() {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
   return (
-    <section className="bg-[#000000] px-[80px] py-[101px]">
-      <h1 className="text-[64px] text-white capitalize leading-[120%] font-semibold">
+    <section className="bg-[#000000] px-[80px] max-md:px-[40px] max-sm:px-[20px] py-[101px] max-md:py-[51px]">
+      <h1 className="text-[64px] max-md:text-[56px] max-sm:text-[44px] max-[500px]:text-[36px] text-white capitalize leading-[120%] font-semibold">
         My Projects
       </h1>
-      <div className="flex mt-[52px] gap-[32px]">
-        <div className="w-[400px] hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
+      <div className="flex mt-[52px] max-lg:flex-wrap gap-[32px]">
+        <div className="w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
           <img src={Project1} className="border-[1px]" alt="" />
           <h1 className="text-[20px] font-semibold mt-[12px]">
             Basic Tailwind Website
@@ -28,7 +31,8 @@ function Project() {
           </div>
           <Link
             to={"/projects/tailwind-project"}
-            className="absolute flex left-[72%] cursor-pointer bottom-[5px]"
+            onClick={handleClick}
+            className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[5px]"
           >
             <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
               Read More
@@ -36,9 +40,9 @@ function Project() {
             <img src={Arrow} className="w-[24px]" alt="" />
           </Link>
         </div>
-        <div className="w-[400px] hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
+        <div className="w-[400px] max-lg:pb-[50px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto hover:scale-105 transition-all duration-300 relative h-[350px] bg-white rounded-[7px] px-[12px] py-[20px]">
           <img src={Project2} className="border-[1px]" alt="" />
-          <h1 className="text-[20px] font-semibold mt-[12px]">
+          <h1 className="text-[20px] leading-[120%] font-semibold mt-[12px]">
             Knest Aluminium FormWork
           </h1>
           <p className="text-base mt-[12px] mb-[8px]">Skills Used:</p>
@@ -55,7 +59,8 @@ function Project() {
           </div>
           <Link
             to={"/projects/knest-project"}
-            className="absolute flex cursor-pointer left-[72%] bottom-[5px]"
+            onClick={handleClick}
+            className="absolute flex max-[670px]:left-[calc(100%-110px)] cursor-pointer max-xl:left-[65%] left-[72%] bottom-[5px]"
           >
             <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
               Read More

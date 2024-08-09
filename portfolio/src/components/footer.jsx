@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 import ThemeContext from "../context/themeContext";
 function Footer() {
   const { theme } = useContext(ThemeContext);
+  const handleClick = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
   return (
-    <footer className={`  ${
-                theme === "light" ? "bg-white" : "text-white bg-black"
-              } px-[80px] flex justify-between pt-[50px] pb-[80px]`}>
-      <div className="flex gap-[52px]">
+    <footer
+      className={`  ${
+        theme === "light" ? "bg-white" : "text-white bg-black"
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-[500px]:flex-col max-[500px]:gap-[40px] flex justify-between pt-[50px] pb-[80px]`}
+    >
+      <div className="flex max-sm:gap-[32px] max-[500px]:justify-between gap-[52px]">
         <ul className="flex flex-col gap-[4px]">
           <li>
             <div
@@ -31,7 +36,7 @@ function Footer() {
             </div>
           </li>
         </ul>
-        <ul className="flex flex-col gap-[4px]">
+        <ul className="flex flex-col max-[500px]:w-[120px] gap-[4px]">
           <li>
             <a href="mailto:hello@paralleledu.com">Mail</a>
           </li>
@@ -40,27 +45,39 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex gap-[52px]">
+      <div className="flex max-sm:gap-[32px] max-[500px]:justify-between gap-[52px]">
         <ul className="flex flex-col gap-[4px]">
           <li>
-            <Link to={"/projects/tailwind-project"}>Tailwind Project</Link>
+            <Link onClick={handleClick} to={"/projects/tailwind-project"}>
+              Tailwind Project
+            </Link>
           </li>
           <li>
-            <Link to={"/projects/knest-project"}>Knest Project</Link>
+            <Link onClick={handleClick} to={"/projects/knest-project"}>
+              Knest Project
+            </Link>
           </li>
           <li>
-            <Link to={"/projects/portfolio-project"}>Portfolio Project</Link>
+            <Link onClick={handleClick} to={"/projects/portfolio-project"}>
+              Portfolio Project
+            </Link>
           </li>
         </ul>
-        <ul className="flex flex-col gap-[4px]">
+        <ul className="flex max-[500px]:w-[120px] flex-col gap-[4px]">
           <li>
-            <Link to={"/about"}>About</Link>
+            <Link onClick={handleClick} to={"/about"}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to={"/projects"}>Projects</Link>
+            <Link onClick={handleClick} to={"/projects"}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link onClick={handleClick} to={"/contact"}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

@@ -7,25 +7,25 @@ function Section() {
   return (
     <section className={`${
       theme === "light" ? "text-black bg-white" : "text-white bg-black"
-    } px-[80px] py-[101px]`}>
-      <h1 className="text-[64px] capitalize leading-[120%] font-semibold">
+    } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-[51px] py-[101px]`}>
+      <h1 className="text-[64px] max-md:text-[56px] max-sm:text-[44px] max-[500px]:text-[36px] capitalize leading-[120%] font-semibold">
         Experience and Skills:
       </h1>
-      <p className="mt-[30px] w-[1024px]">
+      <p className="mt-[30px] max-xl:w-full w-[1024px]">
         Inspired: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Impedit ducimus inventore nesciunt recusandae numquam animi nostrum
         laudantium voluptas sapiente! Excepturi ut molestiae suscipit voluptate
         cupiditate quam debitis soluta voluptatum autem.
       </p>
 
-      <p className="mt-[20px] w-[1024px]">
+      <p className="mt-[20px] max-xl:w-full w-[1024px]">
         Skills: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Impedit ducimus inventore nesciunt recusandae numquam animi nostrum
         laudantium voluptas sapiente! Excepturi ut molestiae suscipit voluptate
         cupiditate quam debitis soluta voluptatum autem.
       </p>
       <h1 className="mt-[30px] text-[20px]">Project-1:</h1>
-      <p className="mt-[10px] w-[1024px]">
+      <p className="mt-[10px] max-xl:w-full w-[1024px]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
         ducimus inventore nesciunt recusandae numquam animi nostrum laudantium
         voluptas sapiente! Excepturi ut molestiae suscipit voluptate cupiditate
@@ -37,7 +37,7 @@ function Section() {
         to visit my project.
       </p>
       <h1 className="mt-[30px] text-[20px]">Project-2:</h1>
-      <p className="mt-[10px] w-[1024px]">
+      <p className="mt-[10px] max-xl:w-full w-[1024px]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
         ducimus inventore nesciunt recusandae numquam animi nostrum laudantium
         voluptas sapiente! Excepturi ut molestiae suscipit voluptate cupiditate
@@ -49,7 +49,7 @@ function Section() {
         to visit my project.
       </p>
       <h1 className="mt-[30px] text-[20px]">Project-3:</h1>
-      <p className="mt-[10px] w-[1024px]">
+      <p className="mt-[10px] max-xl:w-full w-[1024px]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
         ducimus inventore nesciunt recusandae numquam animi nostrum laudantium
         voluptas sapiente! Excepturi ut molestiae suscipit voluptate cupiditate

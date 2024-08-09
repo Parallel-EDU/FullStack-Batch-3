@@ -8,9 +8,9 @@ function Hero() {
     <main
       className={`${
         theme === "light" ? "text-black bg-white" : "text-white bg-black"
-      } px-[80px] h-[100vh] relative pt-[300px]`}
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pt-[120px] max-sm:h-[500px] h-[100vh] relative pt-[300px]`}
     >
-      <h1 className="text-[92px] font-semibold capitalize leading-[120%]">
+      <h1 className="text-[92px] text-[92px] max-lg:text-[76px] max-md:text-[62px] max-sm:text-[56px] font-semibold capitalize leading-[120%]">
         Basic Tailwind Project
       </h1>
     </main>
