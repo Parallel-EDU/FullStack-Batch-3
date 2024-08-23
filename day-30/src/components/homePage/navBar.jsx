@@ -11,7 +11,8 @@ function Navbar() {
         <img style={{filter: theme === 'light'? 'invert(0)' : 'invert(1)'}} src={Logo} height={50} width={50} alt="" />
       </NavLink>
       <nav className="flex flex-row-reverse gap-[128px]">
-        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        <button 
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
           Toggle Theme
         </button>
         <ul className="flex gap-[24px]">
